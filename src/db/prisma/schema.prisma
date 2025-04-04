@@ -23,3 +23,9 @@ model categoria {
   id   String @id @default(uuid())
   nome String @db.VarChar(80)
 }
+
+  created_at      DateTime @db.DateTime(0)
+  updated_at      DateTime? @db.DateTime(0)
+  updatedSenha_at DateTime? @db.DateTime(0)
+}
+

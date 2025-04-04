@@ -1,13 +1,24 @@
 {
   "name": "escopo_basico",
   "version": "1.0.0",
+  "description": "Mercado API",
+  "homepage": "https://github.com/nathaliacsan/mercado_api#readme",
+  "bugs": {
+    "url": "https://github.com/nathaliacsan/mercado_api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathaliacsan/mercado_api.git"
+  },
+  "license": "MIT",
+  "author": "Squad Mercado",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
     "dev": "nodemon src/server.ts"
   },
-  "license": "MIT",
   "dependencies": {
     "@prisma/client": "^5.7.1",
     "bcryptjs": "^2.4.3",

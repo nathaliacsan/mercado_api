@@ -11,3 +11,8 @@ container.registerSingleton<ICategoriaRepository>(
   "CategoriaRepository",
   CategoriaRepository
 );
+
+container.registerSingleton<IUserRepository>(
+    "UserRepository",
+    UserRepository
+  );
