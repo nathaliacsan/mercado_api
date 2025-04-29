@@ -7,7 +7,8 @@ class ProdutoRepository implements IProdutoRepository {
     await prismaClient.produto.create({
       data: {
         nome,
-        valor
+        valor,
+        created_at: new Date(),
       },
     });
   }
@@ -16,7 +17,8 @@ class ProdutoRepository implements IProdutoRepository {
     return await prismaClient.produto.findMany({
       select: {
         id: true,
-        nome: true
+        nome: true,
+        valor: true
       },
     });
   }

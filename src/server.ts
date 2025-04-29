@@ -11,7 +11,11 @@ import { router } from "./routes/index.routes";
 const app = express();
 const port = 3300;
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:3000", // ou a porta que seu front roda
+  })
+);
 app.use(json());
 app.use(router);
 
