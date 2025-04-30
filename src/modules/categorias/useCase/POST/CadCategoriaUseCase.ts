@@ -1,7 +1,7 @@
 import { inject, injectable } from "tsyringe";
 import { ICategoriaRepository } from "../../infra/repositories/ICategoriaRepository";
 
-@injectable()
+@injectable() 
 class CadCategoriaUseCase {
   constructor(
     @inject("CategoriaRepository")
